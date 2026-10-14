@@ -11,3 +11,5 @@ Install the plugin, then set `LIFECLAW_API_TOKEN` to **your own** `lc_` token fr
 Calls may incur charges and require the relevant phone setup and account balance. Confirm the recipient, number, and exact message before relaying to a person. For `call_me`, set and verify a receiving number in LifeClaw first. See [MCP documentation](https://lifeclaw.agentese.ai/mcp) for setup, limits, and examples.
 
 Support: [LifeClaw Telegram](https://t.me/agenteseAI).
+
+The plugin files in this repository are licensed under [MIT](LICENSE).
