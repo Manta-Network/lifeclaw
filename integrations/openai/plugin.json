@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lifeclaw",
+  "version": "1.0.0",
+  "description": "Connect your agent to LifeClaw for verified phone calls, message relay, and business inquiries.",
+  "author": {
+    "name": "LifeClaw",
+    "email": "lifeclaw@manta.network",
+    "url": "https://lifeclaw.agentese.ai/"
+  },
+  "homepage": "https://lifeclaw.agentese.ai/mcp",
+  "repository": "https://github.com/Manta-Network/lifeclaw",
+  "license": "MIT",
+  "keywords": ["phone", "calling", "booking", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LifeClaw",
+        "shortDescription": "Phone calls for your agent",
+        "longDescription": "Connect your LifeClaw account so your agent can call your verified phone for a time-sensitive decision, relay an approved message to a person, or call a business to inquire or book. Business search and call results are also available. Calls use your LifeClaw points and may require phone verification. The agent should confirm the recipient and message before placing personal calls.",
+        "developerName": "LifeClaw",
+        "category": "Productivity",
+        "capabilities": ["Call me", "Relay a message", "Call a business", "Find places"],
+        "websiteURL": "https://lifeclaw.agentese.ai/",
+        "supportURL": "https://t.me/agenteseAI",
+        "privacyPolicyURL": "https://lifeclaw.agentese.ai/privacy",
+        "termsOfServiceURL": "https://lifeclaw.agentese.ai/terms",
+        "defaultPrompt": [
+          "If a critical alert is still active and I haven't replied, call me once for a decision.",
+          "Help me confirm the exact message and recipient, then call that person to relay it.",
+          "Find a restaurant and call to ask about a reservation after I confirm the details."
+        ],
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
