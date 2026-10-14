@@ -1,0 +1,23 @@
+{
+  "name": "lifeclaw",
+  "version": "1.0.0",
+  "description": "Let your agent call you for urgent decisions, relay messages to a person, and call businesses for bookings or inquiries.",
+  "author": {
+    "name": "LifeClaw",
+    "email": "lifeclaw@manta.network"
+  },
+  "homepage": "https://lifeclaw.agentese.ai/mcp",
+  "logo": "assets/logo.png",
+  "keywords": ["phone", "calling", "booking", "assistant", "mcp"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "LIFECLAW_API_TOKEN": {
+        "type": "string",
+        "title": "LifeClaw API token",
+        "description": "Your own lc_ token from LifeClaw settings. Enter the token without the Bearer prefix."
+      }
+    },
+    "required": ["LIFECLAW_API_TOKEN"]
+  }
+}

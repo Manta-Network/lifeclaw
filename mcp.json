@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "lifeclaw": {
+      "url": "https://api-v2.lifeclaw.agentese.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LIFECLAW_API_TOKEN}"
+      }
+    }
+  }
+}
