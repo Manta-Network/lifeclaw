@@ -1,15 +1,22 @@
-# LifeClaw for Cursor
+# LifeClaw MCP
 
-Connect Cursor to LifeClaw's hosted MCP server. Your agent can:
+LifeClaw lets an AI agent make phone calls on your behalf and bring the answer back. Its hosted MCP server provides three phone capabilities:
 
-- `call_me` to reach you by phone when an urgent decision needs your answer, including when you have not responded in chat;
-- `call_person` to relay a confirmed message to a private contact by phone;
-- `call_business` to ask a business a question or make a booking by phone, then bring the answer back.
+- `call_me` calls your verified receiving number when an urgent decision needs your answer, including when you have not responded in chat.
+- `call_person` relays a message you confirmed to a specified person.
+- `call_business` calls a business for an inquiry or booking and returns the result.
 
-Install the plugin, then set `LIFECLAW_API_TOKEN` to **your own** `lc_` token from [LifeClaw API key settings](https://lifeclaw.agentese.ai/chat?settings=tokens). The plugin sends it as a Bearer token to the [LifeClaw MCP endpoint](https://api-v2.lifeclaw.agentese.ai/mcp). Do not put tokens in this repository.
+## Connect
 
-Calls may incur charges and require the relevant phone setup and account balance. Confirm the recipient, number, and exact message before relaying to a person. For `call_me`, set and verify a receiving number in LifeClaw first. See [MCP documentation](https://lifeclaw.agentese.ai/mcp) for setup, limits, and examples.
+| Item | Value |
+| --- | --- |
+| MCP transport | Streamable HTTP |
+| Endpoint | `https://api-v2.lifeclaw.agentese.ai/mcp` |
+| Authentication | `Authorization: Bearer lc_...` |
+| Setup and tool documentation | [lifeclaw.agentese.ai/mcp](https://lifeclaw.agentese.ai/mcp) |
 
-Support: [LifeClaw Telegram](https://t.me/agenteseAI).
+Create your own token in [LifeClaw API key settings](https://lifeclaw.agentese.ai/chat?settings=tokens). Configure your MCP client to send it in the `Authorization` header. Keep the token in your client's secret or environment settings; do not commit it to a repository. Client-specific configuration syntax may differ.
 
-The plugin files in this repository are licensed under [MIT](LICENSE).
+Calls may consume credits and require phone setup. Verify your receiving number before using `call_me`. Confirm the recipient, number, and exact message before using `call_person`. See the [MCP documentation](https://lifeclaw.agentese.ai/mcp) for limits and usage examples.
+
+Support: [LifeClaw Telegram](https://t.me/agenteseAI). The public configuration files in this repository are licensed under [MIT](LICENSE).
