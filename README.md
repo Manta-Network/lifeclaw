@@ -18,8 +18,8 @@ LifeClaw lets an AI agent make phone calls on your behalf and bring the answer b
 Claude Code and Codex can open LifeClaw's browser authorization flow without a manually created API token:
 
 ```bash
-# Claude Code: run /mcp after adding the server, then authorize in your browser
-claude mcp add --transport http lifeclaw https://api-v2.lifeclaw.agentese.ai/mcp
+# Claude Code: install for your user (all projects), then run /mcp and authorize in your browser
+claude mcp add --scope user --transport http lifeclaw https://api-v2.lifeclaw.agentese.ai/mcp
 
 # Codex: the login command opens the browser authorization flow
 codex mcp add lifeclaw --url https://api-v2.lifeclaw.agentese.ai/mcp
