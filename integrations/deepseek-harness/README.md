@@ -15,6 +15,15 @@ This configuration bundle adds the hosted LifeClaw MCP server to a DeepSeek Harn
 
 The config dump should include a `dsh-lifeclaw-mcp` layer with an `mcp-lifeclaw` row. In a running session, LifeClaw tools are named `mcp__lifeclaw__<tool>`. Ask the agent to check your account status to confirm the connection without placing a call.
 
+## Example requests
+
+- “Call my verified number when this long-running task finishes and give me a short update.”
+- “Find a nearby restaurant and call to ask if it has a table for four tonight.”
+- “Call the venue to move my confirmed reservation to 7:30 pm, then report the result.”
+- “Show my saved contacts, then call the person I confirm and relay the message I approve.”
+
+For an alert such as “Call me if I haven't acknowledged a critical outage after 10 minutes,” run a workflow that can wait and recheck the alert. The workflow invokes LifeClaw only when the alert is still active and unacknowledged. More examples are in the [main README](../../README.md).
+
 ![LifeClaw configuration bundle installed in DeepSeek Harness](../../assets/deepseek-harness-plugin.jpg)
 
 To remove the bundle:
