@@ -17,8 +17,6 @@ The config dump should include a `dsh-lifeclaw-mcp` layer with an `mcp-lifeclaw`
 
 ![LifeClaw configuration bundle installed in DeepSeek Harness](../../assets/deepseek-harness-plugin.jpg)
 
-The screenshot shows the bundle loaded in an isolated Web profile. It does not show an authenticated tool call.
-
 To remove the bundle:
 
 ```bash
