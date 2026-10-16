@@ -1,0 +1,21 @@
+{
+  "name": "dsh-lifeclaw-mcp",
+  "version": "0.1.0",
+  "description": "Connect DeepSeek Harness to the hosted LifeClaw MCP server",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manta-Network/lifeclaw.git"
+  },
+  "files": [
+    "integrations/deepseek-harness/cordis.patch.yml"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./integrations/deepseek-harness/cordis.patch.yml"
+    }
+  }
+}
