@@ -15,6 +15,10 @@ This configuration bundle adds the hosted LifeClaw MCP server to a DeepSeek Harn
 
 The config dump should include a `dsh-lifeclaw-mcp` layer with an `mcp-lifeclaw` row. In a running session, LifeClaw tools are named `mcp__lifeclaw__<tool>`. Ask the agent to check your account status to confirm the connection without placing a call.
 
+![LifeClaw configuration bundle installed in DeepSeek Harness](../../assets/deepseek-harness-plugin.jpg)
+
+The screenshot shows the bundle loaded in an isolated Web profile. It does not show an authenticated tool call.
+
 To remove the bundle:
 
 ```bash
