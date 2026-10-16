@@ -20,7 +20,8 @@ The config dump should include a `dsh-lifeclaw-mcp` layer with an `mcp-lifeclaw`
 - “Call my verified number when this long-running task finishes and give me a short update.”
 - “Find a nearby restaurant and call to ask if it has a table for four tonight.”
 - “Call the venue to move my confirmed reservation to 7:30 pm, then report the result.”
-- “Show my saved contacts, then call the person I confirm and relay the message I approve.”
+- “Call my saved contact Mom and tell her I'll be home late. Confirm her number ending and the message with me first.”
+- “Help me save my mom's number as Mom after I confirm it.”
 
 For an alert such as “Call me if I haven't acknowledged a critical outage after 10 minutes,” run a workflow that can wait and recheck the alert. The workflow invokes LifeClaw only when the alert is still active and unacknowledged. More examples are in the [main README](../../README.md).
 
