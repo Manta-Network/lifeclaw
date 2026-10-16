@@ -1,10 +1,11 @@
 # LifeClaw MCP
 
-LifeClaw lets an AI agent make phone calls on your behalf and bring the answer back. Its hosted MCP server provides three phone capabilities:
+LifeClaw lets an AI agent make phone calls on your behalf and bring the answer back. Its hosted MCP server also lets the agent manage your saved contacts:
 
 - `call_me` calls your verified receiving number when you ask for a phone update or an urgent alert needs your attention.
 - `call_person` relays a message you confirmed to a specified person.
 - `call_business` calls a business for an inquiry or booking and returns the result.
+- `list_contacts`, `save_contact`, `update_contact`, and `delete_contact` manage the address book shared with your LifeClaw account. Adding, editing, or deleting a contact requires your confirmation. `call_contact` can then call a saved person after you confirm the recipient and message.
 
 ## Connect
 
@@ -39,7 +40,8 @@ For DeepSeek Harness, this repository also includes a [configuration bundle](int
 - **Business inquiry:** “Call the restaurant and ask whether they have a quiet table for four tonight. Tell me what they say.”
 - **Booking:** “Find a nearby dentist, check availability by phone for Friday afternoon, and book a slot after I confirm the details.”
 - **Change a booking:** “Call the restaurant to move my confirmed reservation to 7:30 pm and tell me whether they agree.”
-- **Contact:** “Call my saved contact Alex and relay this message after I confirm the recipient and wording.”
+- **Call family:** “Call my saved contact Mom and tell her I'll be home late. Show me the number ending and exact message before you dial.”
+- **Address book:** “Help me save my mom's number as Mom after I confirm it.”
 
 The 10-minute example needs a running client workflow that waits, checks whether the alert is still active and unacknowledged, then asks LifeClaw to call. LifeClaw handles the phone call; the client handles the timer and alert checks.
 
