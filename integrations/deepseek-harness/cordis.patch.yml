@@ -1,0 +1,10 @@
+- insert:
+    - id: mcp-lifeclaw
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: lifeclaw
+        transport: streamable-http
+        url: https://api-v2.lifeclaw.agentese.ai/mcp
+        headers:
+          Authorization: !!js '`Bearer ${process.env.LIFECLAW_API_TOKEN}`'
+        toolCallTimeoutMs: 300000
