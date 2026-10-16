@@ -25,4 +25,4 @@ dsh plugin --profile web remove dsh-lifeclaw-mcp
 
 The MCP client evaluates the token environment variable at startup. Restart Harness after setting or rotating it. Calls can consume LifeClaw points; check the recipient and action before approving a phone call.
 
-This is an unofficial community integration maintained by LifeClaw, not a DeepSeek AI product. See the [DeepSeek Harness bundle guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md) and [MCP client configuration](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/mcp/mcp-client/README.md).
+This is LifeClaw's official integration for DeepSeek Harness, maintained by the LifeClaw team. It is an unofficial DeepSeek Harness community plugin, not a DeepSeek AI product. See the [DeepSeek Harness bundle guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md) and [MCP client configuration](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/mcp/mcp-client/README.md).
